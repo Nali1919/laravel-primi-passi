@@ -9,18 +9,15 @@
 <body>
     <h1>Ciao</h1>
 
-  <a href="{{url('/list1')}}">LINK 1</a>
+  <a href="{{url('/ciao2')}}">Vai a ciao2</a>
     @php
-        $Number = [1,2,4,7,8,3,4,7];
+        $array = [1,2,3,4,5,6,7,8,9,10];
     @endphp
-
-    @foreach($Number as $Numbers )
-        <h3>{{$Numbers}}</h3>
+ <ul>
+    @foreach($array as $number )
+        <li>{{$number}}</li>
     @endforeach
-
-
-
-
+ </ul>
 
 </body>
 </html>
